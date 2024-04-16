@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body, h1, p {
+            margin: 0;
+            padding: 0;
+            
+     
+        }
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+header{
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: rgb(15 23 42);
+    color: white;
+    
+  
+}
+main {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 30px;
+    max-width: 800px; 
+    width: 100%;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+li{
+    font-size: 2rem;
+}
+footer{
+    text-align:center;
+    font-size: 2.5rem;
+    background-color: rgb(15 23 42);
+    color: white;
+    
+}
+.project h3 {
+    color: #333;
+    margin-top: 0;
+}
+a{
+    text-align: center;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+   </style>
+   
+</head>
+ 
+<body>
+
+
+    <body>
+        <header >
+            <h1>My Portfolio</h1>
+        </header>
+    
+        <main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <ul>
+                    <li>I'm Tristan Sancho Yvez R. Manlapaz</li>
+                    <li>I'm 22 years old</li>
+                    <li>I live in fairview central village baguio city</li>
+                    <li>I like playing video games and do some activities like exercise</li>
+                </ul>
+                
+            </section>
+    
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Graduated at Josefa Carino Elementary School</li>
+                    <li>Graduated at Pines City National Highschool</li>
+                    <li>Graduated at University of the Cordilleras Senior High</li>
+                    <li>Studying College in University of the Cordilleras as an IT student</li>
+                </ul>
+            </section>     
+       
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-container">
+                    <div class="project-tile center">
+                        <a
+                            href="https://kantsus.github.io/prj01_SurveyForm/"
+                            target="_blank"
+                        >
+                            <div class="project-text center">
+                                <h3>Survey Form</h3>
+                            </div>
+                            <img
+                                src="https://www.mycustomer.com/sites/default/files/istock_blossomstar_survey.jpg"
+                                alt="Survey Form"
+                                class="center"
+                            />
+                        </a>
+                    </div>
+                    <div class="project-tile center">
+                        <a
+                            href="https://kantsus.github.io/Prj02_TributeP/"
+                            target="_blank"
+                        >
+                            <div class="project-text center">
+                                <h3>Tribute Page</h3>
+                            </div>
+                            <img
+                                src=""
+                                alt="Tribute Page"
+                                class="center"
+                            />
+                        </a>
+                    </div>              
+            </section>
+          
+
+            <button id="changeColorButton">Change Background Color</button>
+        <script>
+        const button = document.getElementById('changeColorButton');
+        button.addEventListener('click', function() {
+        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); 
+        document.body.style.backgroundColor = randomColor;
+        });
+        </script>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 My Portfolio</p>
+        </footer>
+</body>
+</html>
